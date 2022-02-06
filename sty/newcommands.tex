@@ -1,6 +1,3 @@
-\NeedsTeXFormat{LaTeX2e}
-\RequirePackage{packages}
-
 \renewcommand{\phi}{\ensuremath{\varphi}}
 \renewcommand{\kappa}{\ensuremath{\varkappa}}
 \renewcommand{\le}{\ensuremath{\leqslant}}
@@ -54,6 +51,9 @@
 \newcommand{\trbr}[1]{
 	\left\langle#1\right\rangle
 }
+
+\newcommand{\partder}[2]{\ensuremath{\frac{\partial #1}{\partial #2}}}
+\newcommand{\extpartder}[3]{\ensuremath{\left(\frac{\partial #1}{\partial #2}\right)_{#3}}}
 
 \renewcommand\labelitemi{$\triangleright$}
 
