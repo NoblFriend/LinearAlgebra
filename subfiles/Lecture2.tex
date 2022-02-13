@@ -1,0 +1,40 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+    \begin{note}
+        При циклическом процессе первое начало термодинамики можно интерпретировать как закон сохранения энергии:
+        \begin{equation}
+            \oint \delta Q - \oint \delta A = 0.
+        \end{equation} 
+        Такой подход свойственен теоретической физике.
+    \end{note}
+\subsection{Про неквазистатический процесс}
+    Рассмотрим газ под поршнем, атмосферой пренебрежём, будем считать, что газа $\nu = 1$~моль. Масса поршня $M$. Запишем давление и уравнение состояния:
+    \begin{gather}
+        P_1 = \frac{Mg}{S}, \\
+        MgH_1 = RT_1,
+    \end{gather}
+    где $H_1$~--- высота положения поршня. Теперь \emph{резко} положим на него что-то заметной (существенной, иначе~--- сравнимой с $M$) массы $m$. Сначала начнет происходить что-то неописуемое (хоть и адиабатически), но однажды всё придёт в равновесие. Запишем закон сохранения энергии сразу после удара и после установления равновесия:
+    \begin{equation}
+        \label{eq:lec2:problem}
+        (M+m)gH_1+\frac{3}{2}RT_1=(M+m)gH_2+\frac{3}{2}RT_2.
+    \end{equation}
+
+    \begin{note}
+        Немного преобразуем равенство \eqref{eq:lec2:problem}:
+        \begin{align}
+            \frac{(m+M)g}{S} (H_1-H_2)S &= \frac{3}{2} R (T_2 - T_1)\\
+            \underbrace{P_{\text{out}} \Delta V_{\text{out}}}_{\text{Работа внешних сил}} &= \underbrace{\frac{3}{2} R (T_2 - T_1).}_{_{\text{Изменение внутренней энергии}}}
+        \end{align}
+    \end{note}
+    \begin{note}
+        Немного преобразуем равенство \eqref{eq:lec2:problem} и уравнение состояния:
+        \begin{align}
+            (M+m)\underbrace{\frac{RT_1}{M}}_{gH_1}+\frac{3}{2}RT_1 &= (M+m)\underbrace{\frac{RT_2}{M+m}}_{gH_1}++\frac{3}{2}RT_2, \\
+            \left(\frac{M+m}{M} \right)RT_1 + \frac{3}{2}RT_1 &= \frac{5}{2}RT_2, \\
+            RT_1\left(\frac{3}{2} + \frac{M+m}{M}\right)&=\frac{5}{2}RT_2,
+        \end{align}
+        с учётом $P(m) = mg/S \sim m$ заменим отношение масс:
+
+    \end{note}
+        
+\end{document}
